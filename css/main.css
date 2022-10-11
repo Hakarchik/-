@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', san-serif ;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 12% calc(100% - 24%) 12%;
+    grid-template-rows: 50px 50px 50vh 100vh 50px 50vh auto 50vh auto 50vh 450px 50vh;
+    position: relative;
+    
+}
+
+/*========== Звонок ==========*/
+.call{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    width: 100%;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .35);/*тень сверху*/
+    position: relative;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.btn__call{
+    font-weight: bold;
+	background: #ffa019;
+	border:0px;
+	border-radius: 10px;
+	width: 160px;
+	height: 30px;
+    color:#ffffff;
+    position: relative;
+    cursor: pointer;
+    
+}
+.btn__call:hover{
+   background: #df8406;
+}
+
+.header{
+    grid-column: 1 / 4;
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-left: 0px;
+}
+
+.header_logo{
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    
+}
+.header_logo a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+}
+
+
+.header_menu{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+.header_menu li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 1em;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 12px;
+}
+.header_menu li:hover {
+    border-bottom: 2px solid #000000;
+    opacity: 0.8;
+}
+
+.menu a{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Блок с карниткой*/
+.info{
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fon1.jpg) ; 
+    width:100%; 
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.info_div{
+    text-align: center;
+}
+.info_btn{
+    margin-top: 1em;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    border: unset;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.info_btn:hover{
+    background-color: wheat;
+}
+
+
+/* ==== Наши приимущества ========*/
+.privilege{
+    margin-top: 4em;
+    grid-column: 2 / 3;
+    grid-row: 4;
+    position: relative;
+}
+.privilege h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+.privilege_info{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.privilege_about{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.privilege_about p {
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.subscrib{
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    background-color: #ffa019;
+    justify-content: space-evenly;
+    color: white;
+    height: max-content;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.sub_text{
+    display: flex;
+    width: max-content;
+}
+.sub_input{
+    display: flex;
+    width: max-content;
+}
+.subscrib input{
+    width: auto;
+    height: 1px;
+    border: 1px solid #ffffff;
+    background-color: #ffa019;
+    padding: 15px;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.subscrib input::placeholder{
+    color: #ffffff;
+}
+.subscrib input::-webkit-input-placeholder {color: #ffffff;}
+.subscrib input::-ms-input-placeholder {color: #ffffff;}
+.subscrib input::-moz-placeholder {color: #ffffff;opacity: 1;}
+.subscrib input::-moz-placeholder {color: #ffffff;opacity: 1;}
+.subscrib input::-ms-input-placeholder {color: #ffffff;}
+
+.subscrib input:focus{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.subscrib button{
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    border: unset;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+/*==============Особенности гироскутеров,  Плюсы минусы==============*/
+.properties{
+    margin-top: 5em;
+    grid-column: 2/ 3;
+    grid-row: 6;
+
+}
+.properties h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.properties__plus_minus{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.properties_minus p, .properties_plus p, .properties__plus_two p{
+    margin-top: 0.5em;
+}
+.properties_info{
+    margin-top: 2em;
+}
+
+/*==============  КАТАЛОГ ==============*/
+.catalog{
+    grid-column: 2/ 3;
+    grid-row: 7;
+}
+.catalog h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.catalog_img{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around; 
+}
+.catalog_img li{
+    list-style: none;
+    width: 250px;
+}
+
+.catalog_img img{
+    width: 200px;
+    height: 220px;
+}
+.class_who{
+    margin-bottom: 0px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: rgb(254,160,24);
+    border-radius: 0px 10px 10px 0px ;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+
+}
+.catalog_info{
+    position: relative;
+}
+.cat_img{
+    width: 100%;
+    object-fit:fill;
+    object-position: 0 0;
+}
+
+.price{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*============ Персонал============ */
+
+.personal{
+    margin-top: 140px;
+    grid-column: 2/ 3;
+    grid-row: 8;
+}
+.personal h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.personal_block{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.personal_name{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fcfcfc;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.personal_info{
+    margin-left: 10px;
+}
+.personal_info button{
+    margin-top: 1.5em;
+    background-color: #ffa019;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.personal_foto img {
+    width: 200px;
+    height: 200px;
+}
+.personal_foto{
+    height: 80%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+.personal button{
+    color: white;
+    font-weight: bold;
+}
+
+/*=============== Бренды =========*/
+.brands{
+    margin-top: 40px;
+    grid-column: 1/ 4;
+    grid-row: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.brands li{
+    list-style: none;
+    font-size: 2.5em;
+    color: gray;
+    margin-left: 2px;
+}
+.brands li:hover{
+    color: #00abee;
+}
+
+/* ============ ПОбочная информация =======*/
+.second_info{
+    margin-top: 60px;
+    grid-column: 2 / 3;
+    grid-row: 10;
+}
+.second_info h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.second_info__img{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.info-2{
+    position: absolute;
+    top: 45%;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+.info-1{
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+}
+.second_info__img img{
+    filter: brightness(50%);
+}
+
+
+
+
+
+/*============== ПОДВАЛ ==============*/
+.footer{
+    grid-column: 2 / 3;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_info{
+    width: 400px;
+}
+.footer_info p{
+    margin-top: 1em;
+    color: grey;
+}
+
+.footer_nav li {
+    list-style: none;
+    margin-top: 0.5em;
+}
+.footer_nav a{
+    color: gray;
+    text-decoration: none;
+}
+.footer_nav a:hover{
+    color: #00abee;
+}
+
+.toUp{
+    width: 50px;
+    height: 50px;
+    background: url('../img/upto.png');
+    opacity: 0.7;
+    position: fixed;
+    z-index: 3;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.toUp:hover{
+    opacity: 1;
+}
